@@ -1,0 +1,132 @@
+aside {
+    width: 50%;
+    height: 220px;
+}
+
+footer {
+    /* Specyfikacja wyglądu */
+}
+
+header {
+    border: 5px solid black;
+}
+
+main {
+    width: 100%;
+}
+
+
+
+nav ul {
+    /* Specyfikacja wyglądu */
+}
+
+nav li {
+    /* Specyfikacja wyglądu */
+}
+
+.azure {
+    background-color: azure;
+    border: 2px solid black;
+    margin: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 0 20px black
+}
+
+div2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+div {
+    width: 35%;
+}
+
+
+:root {
+    --text-color-initial: black;
+    --text-color-final: blue;
+}
+
+
+h1,
+h2 {
+    animation: colorChange 5s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: var(--text-color-initial);
+    }
+
+    100% {
+        color: var(--text-color-final);
+    }
+}
+
+
+
+
+header,
+nav,
+aside,
+main,
+footer {
+    width: 100%;
+}
+
+div2 {
+    flex-direction: column;
+    /* Układ jednokolumnowy na urządzeniach mobilnych */
+}
+
+div {
+    width: 100%;
+    /* Pełna szerokość na urządzeniach mobilnych */
+}
+
+/* Zapytania mediów dla urządzeń o szerokości ekranu większej niż 600px (dla tabletów i większych) */
+@media only screen and (min-width: 600px) {
+    aside {
+        width: 30%;
+        /* Szerokość panelu bocznego na tabletach i większych */
+    }
+
+    nav {
+        width: 150px;
+    }
+
+    div2 {
+        flex-direction: row;
+        /* Powrót do układu dwukolumnowego */
+    }
+}
+
+/* Zapytania mediów dla urządzeń o szerokości ekranu większej niż 900px (dla desktopów) */
+@media only screen and (min-width: 900px) {
+
+    header,
+    nav,
+    main,
+    aside,
+    footer {
+        margin: 15px;
+        /* Dodatkowe marginesy na desktopach */
+    }
+
+    header,
+    nav,
+    aside,
+    main,
+    footer {
+        padding-left: 20px;
+        /* Dostosowanie marginesów na desktopach */
+        padding-right: 20px;
+    }
+
+    div {
+        width: 35%;
+        /* Szerokość panelu bocznego na desktopach */
+    }
+}
