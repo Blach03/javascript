@@ -1,0 +1,22 @@
+{
+  "Kamil": {
+    "informatyka": [
+      "2",
+      "3",
+      "4"
+    ],
+    "matematyka": [
+      "4",
+      "2"
+    ],
+    "angielski": []
+  },
+  "Anna": {
+    "informatyka": [
+      "3"
+    ],
+    "matematyka": [
+      "2"
+    ]
+  }
+}

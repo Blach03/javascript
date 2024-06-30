@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <title>
+      Tytuł strony / Page tile
+    </title>
+    <style>
+      .rectangle {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .spacious-div {
+            width: 100%;
+            height: 300px;
+            background-color: #ffffff;
+            border: 2px solid #ffffff;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #ffffff;
+        }
+  
+      .rectangle1 {
+        background-color: #e29393;
+        border: 1px solid #313130;
+      }
+  
+      .rectangle2 {
+        background-color: #b2e1c9;
+        border: 1px solid #313130;
+      }
+  
+      .rectangle3 {
+        background-color: #addbe9;
+        border: 1px solid #313130;
+        margin-bottom: 200px;
+      }
+
+      .bg {
+        background-color: #e8d8a7;
+      }
+
+      .footer-content {
+      padding: 20px;
+      }
+
+      .footer-icons {
+        font-size: 16px;
+        color: #000;
+      }
+
+      .footer-icons:hover {
+        color: #666;
+      }
+
+      .footer-section {
+        color: #000;
+        font-size: 14px;
+      }
+
+      .footer-section a {
+        color: #000;
+      }
+
+      .footer-section a:hover {
+        color: #666;
+      }
+
+      .line {
+        border-top: 1px solid #313130;
+        margin-bottom: 15px;
+      }
+
+      .thead-green {
+        background-color: green;
+      }
+
+      .light-green {
+        background-color: lightgreen;
+      }
+
+      .lightest-green {
+        background-color: #ccffcc;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-graduation-cap"></i>
+          Wyższa Szkoła Informatyki
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Studia
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Stacjonarne</a></li>
+                <li><a class="dropdown-item" href="#">Niestacjonarne</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#">Informatyka</a></li>
+                <li><a class="dropdown-item" href="#">Webmastering</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto">
+            <input class="form-control me-2" type="search" placeholder="Szukaj" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="rectangle rectangle1">
+            <h5>Oferty zatrudnienia</h5>
+            <div class="line"></div>
+            <img class="img" src="obrazek1.jpg" alt="Obrazek">
+            <div class="links">
+              <p>&#8226; <a href="https://www.google.com">Google</a></p>
+              <p>&#8226; <a href="https://www.ibm.com">IBM</a></p>
+            </div>
+            <a href="#" class="btn btn-primary">Pozostałe oferty</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="rectangle rectangle2">
+            <h5>Kierunki</h5>
+            <div class="line"></div>
+            <img class="img" src="obrazek2.jpg" alt="Obrazek">
+            <p></p>
+            <table class="table table-success">
+              <thead class="table-active table-success">
+                <tr>
+                  <th scope="col">Kierunek</th>
+                  <th scope="col">Czesne</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Informatyka</td>
+                  <td>4000 zł / semestr</td>
+                </tr>
+                <tr>
+                  <td>Webmastering</td>
+                  <td>3500 zł / semestr</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="rectangle rectangle3">
+            <h5>Zaplecze dydaktyczne</h5>
+            <div class="line"></div>
+            <img class="img" src="obrazek3.jpg" alt="Obrazek">
+            <p>Budynek został wyposażony w wysokiej klasy systemy telekonferencyjne. W czterech salach zostały zainstalowane urządzenia (C40 oraz C60) firmy TANDBERG umożliwiające przetwarzanie, kodowanie i przesyłanie obrazu w rozdzielczości 1080HD. W jednej z sal zainstalowano system Telepresence Dual 52".</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Wykaz studentów</h2>
+        <form id="studentForm" method="post" action="/submit">
+            <div class="mb-3">
+                <label for="studentSelect" class="form-label">Wybierz studenta:</label>
+                <select id="studentSelect" name="student" class="form-select">
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="subject" class="form-label">Przedmiot:</label>
+                <input type="text" id="subject" name="subject" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="grade" class="form-label">Ocena:</label>
+                <input type="text" id="grade" name="grade" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="newGrade" class="form-label">Nowa Ocena (tylko dla modyfikacji):</label>
+                <input type="text" id="newGrade" name="new_grade" class="form-control">
+            </div>
+            <div class="mb-3">
+                <div class="form-check">
+                    <input type="radio" id="actionAdd" name="action" value="add" class="form-check-input" checked>
+                    <label for="actionAdd" class="form-check-label">Dodaj</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="actionRemove" name="action" value="remove" class="form-check-input">
+                    <label for="actionRemove" class="form-check-label">Usuń</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="actionModify" name="action" value="modify" class="form-check-input">
+                    <label for="actionModify" class="form-check-label">Modyfikuj</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="container">
+      <h1>Oceny studentów</h1>
+      <div id="students" class="row"></div>
+      <h2>Przedmioty</h2>
+      <div id="subjects" class="row"></div>
+    </div>
+
+
+    <div class="container">
+        <div class="spacious-div">
+            
+        </div>
+    </div>
+
+    <footer class="bg-light text-dark fixed-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 footer-section">
+                    <p><strong>Adres siedziby:</strong> <br> Wyższa Szkoła Informatyki <br> ul. Jana Bieleckiego 1 <br> 30-836 Kraków</p>
+                </div>
+                <div class="col-md-4 text-center footer-section">
+                    <p><strong>Kontakt:</strong> <br> <a href="tel:+48123456789"><i class="bi bi-telephone-fill footer-icons"></i> +48 555 123 456 </a> <br> <a href="mailto:example@example.com"><i class="bi bi-envelope-fill footer-icons"></i> dziekanat@wsi.krakow.pl</a></p>
+                </div>
+                <div class="col-md-4 text-end footer-section">
+                    <a href="#"><i class="fab fa-facebook-square footer-icons"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square footer-icons"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/students')
+                .then(response => response.json())
+                .then(data => {
+                    const studentsDiv = document.getElementById('students');
+                    Object.keys(data).forEach(student => {
+                        const studentCard = document.createElement('div');
+                        studentCard.classList.add('col-md-4', 'student-card');
+                        studentCard.dataset.name = student;
+                        studentCard.innerHTML = `
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">${student}</h5>
+                                    <ul class="list-group">
+                                        ${Object.entries(data[student]).map(([subject, grades]) => `
+                                            <li class="list-group-item">${subject}: ${grades.join(', ')}</li>
+                                        `).join('')}
+                                    </ul>
+                                </div>
+                            </div>`;
+                        studentsDiv.appendChild(studentCard);
+                    });
+
+                    document.querySelectorAll('.student-card').forEach(card => {
+                        card.ondragover = event => event.preventDefault();
+                        card.ondrop = handleDrop;
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+
+            fetch('/subjects')
+                .then(response => response.json())
+                .then(data => {
+                    const subjectsDiv = document.getElementById('subjects');
+                    data.forEach(subject => {
+                        const subjectCard = document.createElement('div');
+                        subjectCard.classList.add('col-md-4', 'subject-card');
+                        subjectCard.draggable = true;
+                        subjectCard.dataset.subject = subject;
+                        subjectCard.innerHTML = `
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">${subject}</h5>
+                                    <form>
+                                        <input type="text" class="form-control mb-2" name="grade" placeholder="Ocena">
+                                        <input type="hidden" name="action" value="add">
+                                    </form>
+                                </div>
+                            </div>`;
+                        subjectsDiv.appendChild(subjectCard);
+
+                        subjectCard.ondragstart = event => {
+                            event.dataTransfer.setData('text/plain', JSON.stringify({
+                                subject: subject,
+                                grade: subjectCard.querySelector('input[name="grade"]').value,
+                                action: 'add'
+                            }));
+                        };
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+        });
+
+        function handleDrop(event) {
+            event.preventDefault();
+            const studentName = event.currentTarget.dataset.name;
+            const { subject, grade, action } = JSON.parse(event.dataTransfer.getData('text/plain'));
+
+            fetch('/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ student: studentName, subject, grade, action })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const studentCard = document.querySelector(`.student-card[data-name="${studentName}"]`);
+                studentCard.querySelector('ul').innerHTML = Object.entries(data).map(([subject, grades]) => `
+                    <li class="list-group-item">${subject}: ${grades.join(', ')}</li>
+                `).join('');
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>

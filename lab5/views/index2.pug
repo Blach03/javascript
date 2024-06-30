@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        title AGH Student Database
+    body
+        main
+            h1 AGH Student Database
+            if students.length
+                table
+                    thead
+                        tr
+                            th First Name
+                            th Last Name
+                            th Faculty
+                    tbody
+                        each student in students
+                            tr
+                                td= student.firstName
+                                td= student.lastName
+                                td= student.faculty
+            else
+                p No students found.
