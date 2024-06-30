@@ -1,0 +1,90 @@
+.styled aside {
+    width: 50%;
+    height: 220px;
+}
+
+.styled header {
+    border: 5px solid black;
+}
+
+.styled main {
+    width: 100%;
+}
+
+.styled .azure {
+    background-color: azure;
+    border: 2px solid black;
+    margin: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+.styled div2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.styled div {
+    width: 35%;
+}
+
+.styled :root {
+    --text-color-initial: black;
+    --text-color-final: blue;
+}
+
+.styled h1,
+.styled h2 {
+    animation: colorChange 5s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: var(--text-color-initial);
+    }
+
+    100% {
+        color: var(--text-color-final);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .styled aside {
+        width: 30%;
+    }
+
+    .styled header,
+    .styled footer {
+        width: 98%;
+    }
+
+    .styled nav {
+        width: 150px;
+    }
+
+    .styled div2 {
+        flex-direction: row;
+    }
+
+    .styled header,
+    .styled nav,
+    .styled aside,
+    .styled main,
+    .styled footer {
+        margin: 15px;
+    }
+
+    .styled header,
+    .styled nav,
+    .styled aside,
+    .styled main,
+    .styled footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .styled div {
+        width: 35%;
+    }
+}
